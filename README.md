@@ -20,6 +20,8 @@ Coping variable file:
 
     cp .env.example .env
 
+Edite o arquivo ormconfig.json conforme as necessidades
+
 ```
  docker-compose up
 ```
