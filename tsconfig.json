@@ -30,4 +30,6 @@
     "noImplicitAny": true,
     "skipLibCheck": true
   },
+  "include": ["src"],
+  "exclude": ["ormconfig.js"]
 }
