@@ -1,0 +1,16 @@
+[
+  {
+    "type": "postgres",
+    "host": "api-db",
+    "port": 5432,
+    "username": "postgres",
+    "password": "postgres",
+    "database": "api",
+    "entities": ["src/modules/**/entities/**/*.ts"],
+    "migrations": ["src/shared/infra/database/migrations/*.ts"],
+    "cli": {
+      "entitiesDir": "src/modules/**/entities",
+      "migrationsDir": "src/shared/infra/database/migrations"
+    }
+  }
+]
