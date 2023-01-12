@@ -14,6 +14,12 @@ Depencencias utilizadas:
 
 Para rodar o projeto, execute o script docker-compose up para subir os containers:
 
+Execute o comando abaixo para copiar o .env.example
+
+Coping variable file:
+
+    cp .env.example .env
+
 ```
  docker-compose up
 ```
