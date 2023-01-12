@@ -1,5 +1,8 @@
-import express from "express";
-import router from "./routes/routes";
+import { errors } from 'celebrate';
+import express from 'express';
+import 'express-async-errors';
+import ErrorMiddleware from '../middlewares/ErrorMiddleware';
+import router from './routes/routes';
 
 class Server {
   public app: express.Express;
@@ -9,13 +12,17 @@ class Server {
 
     this.config();
 
-    this.app.get("/", (_req, res) => res.json({ ok: true }));
+    this.app.get('/', (_req, res) => res.json({ ok: true }));
   }
 
   private config(): void {
     this.app.use(express.json());
 
     this.app.use(router);
+
+    this.app.use(errors({ statusCode: 403 }));
+
+    this.app.use(ErrorMiddleware);
   }
 
   public start(PORT: string | number): void {
