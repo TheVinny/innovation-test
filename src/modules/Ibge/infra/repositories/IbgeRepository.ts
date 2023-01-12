@@ -19,6 +19,6 @@ export default class IbgeRepository implements IIbgeRepository {
   async save(ibge: IIbgeMapped[]): Promise<void> {
     const ibgeSave = await this.repository.create(ibge);
 
-    await this.repository.save(ibge);
+    await this.repository.save(ibgeSave);
   }
 }
