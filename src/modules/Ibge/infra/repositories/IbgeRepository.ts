@@ -12,7 +12,6 @@ export default class IbgeRepository implements IIbgeRepository {
 
   async verify(): Promise<IIbgeMapped[]> {
     const ibge = await this.repository.find();
-
     return ibge;
   }
 

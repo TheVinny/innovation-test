@@ -1,7 +1,7 @@
 import { createConnection } from 'typeorm';
 
-createConnection('default')
-  .then(() => {
+export default createConnection('default')
+  .then(res => {
     console.log('Connected!');
   })
   .catch(err => {

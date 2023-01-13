@@ -10,7 +10,6 @@ class GetAllProductService {
   ) {}
   async execute(): Promise<IProduct[]> {
     const products = await this.productRepository.GetAll();
-
     return products;
   }
 }
