@@ -18,6 +18,7 @@ Execute o comando abaixo para copiar o .env.example
 
 Coping variable file:
 
+    git clone https://github.com/TheVinny/innovation-test.git && cd innovation-test
     cp .env.example .env
 
 Edite o arquivo ormconfig.json conforme as necessidades
