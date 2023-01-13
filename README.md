@@ -15,7 +15,7 @@ Para rodar o projeto, execute o script docker-compose up para subir os container
 
 Execute o comando abaixo para copiar o .env.example
 
-Coping variable file:
+Clonado o projeto e copiando variáveis de ambiente:
 
     git clone https://github.com/TheVinny/innovation-test.git && cd innovation-test
     cp .env.example .env
