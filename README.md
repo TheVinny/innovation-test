@@ -8,7 +8,6 @@ Depencencias utilizadas:
 - ESLint;
 - Prettier;
 - Celebrate;
-- Multer;
 - TypeORM;
 - Docker;
 
